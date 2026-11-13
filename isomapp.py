@@ -26,6 +26,9 @@ df = pd.DataFrame({
     "Category": category,
 })
 
+
+st.write(df)
+
 # 4. Display key metrics
 col1, col2 = st.columns(2)
 col1.metric("Total Sales", f"${df['Sales ($)'].sum():,}")
