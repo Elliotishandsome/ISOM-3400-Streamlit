@@ -1,4 +1,4 @@
-"import streamlit as st
+import streamlit as st
 import pandas as pd
 import numpy as np
 
@@ -28,4 +28,4 @@ st.subheader(f""{category} Sales Trend"")
 st.line_chart(df.set_index(""Date"")[""Sales ($)""])
 
 if st.checkbox(""Show raw data table""):
-    st.dataframe(df, use_container_width=True)"
+    st.dataframe(df, use_container_width=True)
